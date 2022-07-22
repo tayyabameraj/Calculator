@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container text-center mt-4">
+        <h1>Calculator</h1>
+        <div class="row m-0 mt-4 justify-content-center">
+            <div class="col-md-5">
+                <div class="calculator">
+                    <div class="form-group">
+                        <input type="text" id="result" class="form-control">
+                    </div>
+                    <div class="form-group text-right">
+                        <button class="btn btn-secondary" onclick="clearResult()">Clear</button>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group w-25 p-1"><button onclick="getNum('7')"class="btn btn-primary">7</button></div>
+                        <div class="form-group w-25 p-1"><button onclick="getNum('8')"class="btn btn-primary">8</button></div>
+                        <div class="form-group w-25 p-1"><button onclick="getNum('9')"class="btn btn-primary">9</button></div>
+                        <div class="form-group w-25 p-1"><button onclick="getNum('/')"class="btn btn-primary">/</button></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group w-25 p-1"><button onclick="getNum('4')"class="btn btn-primary">4</button></div>
+                        <div class="form-group w-25 p-1"><button onclick="getNum('5')"class="btn btn-primary">5</button></div>
+                        <div class="form-group w-25 p-1"><button onclick="getNum('6')"class="btn btn-primary">6</button></div>
+                        <div class="form-group w-25 p-1"><button onclick="getNum('*')"class="btn btn-primary">x</button></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group w-25 p-1"><button onclick="getNum('1')"class="btn btn-primary">1</button></div>
+                        <div class="form-group w-25 p-1"><button onclick="getNum('2')"class="btn btn-primary">2</button></div>
+                        <div class="form-group w-25 p-1"><button onclick="getNum('3')"class="btn btn-primary">3</button></div>
+                        <div class="form-group w-25 p-1"><button onclick="getNum('+')"class="btn btn-primary">+</button></div>
+                    </div>
+                    <div class="form-row justify-content-center">
+                        <div class="form-group w-25 p-1"><button onclick="getNum('0')"class="btn btn-primary">0</button></div>
+                        <div class="form-group w-25 p-1"><button onclick="getResult()"class="btn btn-primary">=</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
